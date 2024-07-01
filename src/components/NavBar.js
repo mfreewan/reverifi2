@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import MenuIcon from '@mui/icons-material/Menu';
-import { Menu, MenuItem, IconButton, Typography, Button } from '@mui/material';
+import { Menu, MenuItem, IconButton,Button } from '@mui/material';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import user from '../data/user.json'
+import '../css/NavBar.css'
 
 const Nav = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -30,17 +32,17 @@ const Nav = () => {
 
     const buttonsLeft = (
         <>
-            <button className={buttonClasses}>Buy</button>
-            <button className={buttonClasses}>Rent</button>
-            <button className={buttonClasses}>Knowledge Center</button>
+            <Link to="/buy" className={buttonClasses}>Buy</Link>
+            <Link to="/rent" className={buttonClasses}>Rent</Link>
+            <Link to="/knowledge-center" className={buttonClasses}>Knowledge Center</Link>
         </>
     );
 
     const buttonsRight = (
         <>
-            <button className={buttonClasses}>RE PROS</button>
-            <button className={buttonClasses}>Events</button>
-            <button className={buttonClasses}>Leaderboard</button>
+            <Link to="/re-pros" className={buttonClasses}>RE PROS</Link>
+            <Link to="/events" className={buttonClasses}>Events</Link>
+            <Link to="/leaderboard" className={buttonClasses}>Leaderboard</Link>
         </>
     );
 
@@ -68,12 +70,12 @@ const Nav = () => {
                                 open={Boolean(menuAnchorEl)}
                                 onClose={handleMobileMenuClose}
                             >
-                                <MenuItem onClick={handleMobileMenuClose}>Buy</MenuItem>
-                                <MenuItem onClick={handleMobileMenuClose}>Rent</MenuItem>
-                                <MenuItem onClick={handleMobileMenuClose}>Knowledge Center</MenuItem>
-                                <MenuItem onClick={handleMobileMenuClose}>RE PROS</MenuItem>
-                                <MenuItem onClick={handleMobileMenuClose}>Events</MenuItem>
-                                <MenuItem onClick={handleMobileMenuClose}>Leaderboard</MenuItem>
+                                <MenuItem onClick={handleMobileMenuClose}><Link to="/buy" className={buttonClasses}>Buy</Link></MenuItem>
+                                <MenuItem onClick={handleMobileMenuClose}><Link to="/rent" className={buttonClasses}>Rent</Link></MenuItem>
+                                <MenuItem onClick={handleMobileMenuClose}><Link to="/knowledge-center" className={buttonClasses}>Knowledge Center</Link></MenuItem>
+                                <MenuItem onClick={handleMobileMenuClose}><Link to="/re-pros" className={buttonClasses}>RE PROS</Link></MenuItem>
+                                <MenuItem onClick={handleMobileMenuClose}><Link to="/events" className={buttonClasses}>Events</Link></MenuItem>
+                                <MenuItem onClick={handleMobileMenuClose}><Link to="/leaderboard" className={buttonClasses}>Leaderboard</Link></MenuItem>
                             </Menu>
                         </div>
                         <div className="hidden md:flex items-center space-x-2">
@@ -116,9 +118,9 @@ const Nav = () => {
                                 open={Boolean(anchorEl)}
                                 onClose={handleClose}
                             >
-                                <MenuItem onClick={handleClose}>Profile</MenuItem>
-                                <MenuItem onClick={handleClose}>Settings</MenuItem>
-                                <MenuItem onClick={handleClose}>Logout</MenuItem>
+                                <MenuItem onClick={handleClose}><Link to="/profile" className={buttonClasses}>Profile</Link></MenuItem>
+                                <MenuItem onClick={handleClose}><Link to="/settings" className={buttonClasses}>Settings</Link></MenuItem>
+                                <MenuItem onClick={handleClose}><Link to="/logout" className={buttonClasses}>Logout</Link></MenuItem>
                             </Menu>
                         </div>
                     </div>

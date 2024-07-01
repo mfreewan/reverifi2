@@ -1,0 +1,77 @@
+
+[
+    {
+        "id": 1,
+        "image": "https://houseplangallery.com/cdn/shop/products/hpg-1640-1-the-iris-115566_720x@2x.jpg?v=1629914401",
+        "status": "closed",
+        "price": "$950,000",
+        "daysOnMarket": 467,
+        "location": "Paris, TX, NY",
+        "beds": 5,
+        "baths": 3,
+        "sqft": 2200,
+        "reaction":4,
+        "views":3
+    },
+    {
+        "id": 2,
+        "image": "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg",
+        "price": "$1,010,000",
+        "daysOnMarket": 201,
+        "location": "Paris, TX, NY",
+        "beds": 14,
+        "baths": 8,
+        "sqft": 4,
+        "reaction":4,
+        "views":3
+    },
+    {
+        "id": 3,
+        "image": "https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?cs=srgb&dl=pexels-binyaminmellish-186077.jpg&fm=jpg",
+        "price": "$1,200,000",
+        "daysOnMarket": 365,
+        "location": "Paris, TX, NY",
+        "beds": 4,
+        "baths": 4,
+        "sqft": 1000,
+        "reaction":4,
+        "views":3
+    },
+    {
+        "id": 1,
+        "image": "https://images.adsttc.com/media/images/5735/0a44/e58e/ce1c/5200/006f/medium_jpg/IMG_0370_copy.jpg?1463093821",
+        "status": "closed",
+        "price": "$450,000",
+        "daysOnMarket": 360,
+        "location": "NY",
+        "beds": 5,
+        "baths": 8,
+        "sqft": 300,
+        "reaction":4,
+        "views":3
+    },
+    {
+        "id": 2,
+        "image": "https://images.adsttc.com/media/images/5db8/95f4/3312/fd7c/7e00/020c/large_jpg/GALLERYHOUSE_02-web.jpg?1572378089",
+        "price": "$780,000",
+        "daysOnMarket": 102,
+        "location": " TX",
+        "beds": 2,
+        "baths": 1,
+        "sqft": 20,
+        "reaction":4,
+        "views":3
+    },
+    {
+        "id": 3,
+        "image": "https://media.istockphoto.com/id/483773209/photo/new-cozy-cottage.jpg?s=612x612&w=0&k=20&c=y1rwmoHBg-ZoE7L5WkIWjrTmwXofzqIbozTJyftDu1E=",
+        "price": "$1,500,000",
+        "daysOnMarket": 7,
+        "location": "Paris",
+        "beds": 3,
+        "baths": 3,
+        "sqft": 400,
+        "reaction":4,
+        "views":3
+    }
+]

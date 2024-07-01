@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import Profile from './Profile';
+import React from 'react';
+import ProfileCard from './Profile';
 import Achievements from './Achievements';
 import ProductListing from './Listings';
 
@@ -7,7 +7,7 @@ const Home =()=>{
 
     return(
         <>
-        <Profile/>
+        <ProfileCard/>
         <Achievements/>
         <ProductListing/>
         </>
