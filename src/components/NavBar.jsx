@@ -4,7 +4,7 @@ import AccountCircle from '@mui/icons-material/AccountCircle';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Menu, MenuItem, IconButton,Button } from '@mui/material';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
-import user from '../data/user.json'
+import user from '../assets/data/user.json'
 import '../css/NavBar.css'
 
 const Nav = () => {
@@ -47,7 +47,7 @@ const Nav = () => {
     );
 
     return (
-        <nav className="bg-gray-800 text-yellow fixed w-full">
+        <nav style={{ zIndex: '50' }} className="bg-gray-800 text-yellow fixed z-auto w-full">
             <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16">
                     <div className="flex items-center space-x-2">
@@ -98,7 +98,7 @@ const Nav = () => {
                         <div>
                             <Button
                                 sx={{ color: 'white' }}
-                                startIcon={<AccountCircle sx={{ color: 'white' }} />}
+                                startIcon={<AccountCircle sx={{ color: 'white ' }} />}
                                 onClick={handleMenu}
                             >
                                 {user.name}

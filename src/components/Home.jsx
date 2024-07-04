@@ -8,8 +8,8 @@ const Home =()=>{
     return(
         <>
         <ProfileCard/>
-        <Achievements/>
-        <ProductListing/>
+        <Achievements />
+        <ProductListing />
         </>
     )
 }

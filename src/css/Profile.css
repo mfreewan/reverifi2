@@ -1,3 +1,48 @@
-img{
-    height:min-content;
+/* Frame 110996 */
+/* Rectangle 568 */
+.profile {
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: max-content;
+}
+
+.p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #B7CF53;
+}
+h2{
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 36px;
+line-height: 44px;
+/* identical to box height */
+
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+/* Auto layout */
+.icons {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 11px;
+
+    position: absolute;
+    width: 73px;
+    height: 31px;
+    left: 1348px;
+    top: 612px;
 }

@@ -5,19 +5,12 @@ import Home from "./components/Home";
 
 const App = () => {
   return (
-      // <div className="App">
-      //   <Header />
-      //   <Profile />
-      //   <Achievements />
-      //   <Listings/>
-      //   <Footer />
-      // </div>
       <BrowserRouter>
       <Nav/>
       <Routes>
         <Route path="/" element={<Home />}></Route>
       </Routes>
-      <Footer/>
+      <Footer />
     </BrowserRouter>
   );
 };
